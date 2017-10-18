@@ -9,7 +9,7 @@ LABEL maintainer "Marco.DeDonno@unil.ch"
 
 ADD NFIQ2.tgz /
 
-RUN yum update && \
+RUN yum update -y && \
     yum upgrade -y
  
 RUN yum group install -y "Development Tools" && \
@@ -17,7 +17,7 @@ RUN yum group install -y "Development Tools" && \
 
 RUN cd /NFIQ2/libOpenCV && \
     cmake -D CMAKE_MAKE_PROGRAM=make /NFIQ2/OpenCV/
-    
+
 RUN make -C /NFIQ2/libOpenCV \
     opencv_core opencv_ts opencv_imgproc opencv_highgui opencv_flann \
     opencv_features2d opencv_calib3d opencv_ml opencv_video opencv_objdetect \
