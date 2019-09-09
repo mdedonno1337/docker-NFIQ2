@@ -9,8 +9,7 @@ LABEL maintainer "Marco.DeDonno@unil.ch"
 
 ADD NFIQ2.tgz /
 
-RUN yum update -y && \
-    yum upgrade -y
+RUN yum update -y
  
 RUN yum group install -y "Development Tools" && \
     yum install -y cmake
