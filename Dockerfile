@@ -9,7 +9,7 @@ LABEL maintainer "Marco.DeDonno@unil.ch"
 
 ADD NFIQ2.tgz /
 
-RUN yum update && \
+RUN yum update -y && \
     yum upgrade -y
  
 RUN yum group install -y "Development Tools" && \
