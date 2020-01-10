@@ -1,0 +1,42 @@
+This README document shows how to compile the NFIQ2 operational kit
+and its dependencies manually.
+
+More information about the whole process may be found in the NFIQ2 framework README.
+
+1. Compilation of OpenCV
+------------------------
+
+In order to compile OpenCV, cmake has to be installed.
+Before compilation it may be necessary to remove the Perforce write-protection of the folders libOpenCV and OpenCV.
+
+- Change to directory libOpenCV
+- cmake -D CMAKE_MAKE_PROGRAM=make ../OpenCV/
+- make opencv_core opencv_ts opencv_imgproc opencv_highgui opencv_flann opencv_features2d opencv_calib3d opencv_ml opencv_video opencv_objdetect opencv_contrib opencv_nonfree opencv_gpu opencv_photo opencv_stitching opencv_videostab
+
+Created libraries are then stored in libOpenCV/bin and libOpenCV/lib.
+Libraries stored to libOpenCV/bin will be needed for execution of NFIQ2. So, copy them to the execution folder.
+
+OpenCV DLLs for MSVC9 and MSVC10 will be compiled during execution the according solution (see step 2).
+They will be stored to OpenCV/projects/<compiler>/bin/<Release|Debug>.
+
+Needed OpenCV libraries are:
+- opencv_core
+- opencv_imgproc
+- opencv_ml
+
+2. Compilation of NFIQ2 operational kit
+---------------------------------------
+
+Execute Makefile in folder NFIQ2 ("make"). 
+
+This will compile the NFIQ2 operational kit.
+
+Further dependencies for the NFIQ2 (like libFRXFLL, biomdi) will be
+automatically compiled.
+
+Executables will be stored in bin folder.
+libbiomdi.dll(.so), libfmr.dll(.so), and libbiomeval.dll(.so) need to be copied to the bin directory when executing NFIQ2.
+
+If Microsoft Visual Studio shall be used to compile the framework, the according solution file has to be executed.
+
+When using MSVC compilers, the libbiomdi und libfmr projects are compiled as static libraries and, hence, no further DLLS must be used.

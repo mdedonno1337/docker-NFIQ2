@@ -3,11 +3,6 @@ NFIQ2 on docker
 
 This docker image provide a compilation environement for the NIST Finger Image Quality 2 (NFIQ2) software developped by the NIST (for more information regarding the NFIQ2, see the [offical website](https://www.nist.gov/services-resources/software/development-nfiq-20) or the [github repo](https://github.com/usnistgov/NFIQ2)).
 
-## Get the source
-The first step is to download the [NFIQ2 source code](http://biometrics.nist.gov/cs_links/quality/NFIQ_2/NFIQ2.tgz), and coping it in the same folder as the `Dockerfile` file.
-
-For the moment, this docker image seems not work with the github version. Will be fixed in the future.
-
 ## How to build
 The building process is very simple. First, install [docker](https://get.docker.com/).
 The second step is to run this docker image as follow:

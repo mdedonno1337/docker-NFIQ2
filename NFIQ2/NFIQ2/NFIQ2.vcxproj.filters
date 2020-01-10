@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\features">
+      <UniqueIdentifier>{dac9be80-44f1-478b-9774-9974dca31f71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\wsq">
+      <UniqueIdentifier>{befeb4d6-7340-4210-9bff-0f6a41499b1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\prediction">
+      <UniqueIdentifier>{3b231687-facd-479a-93f6-2165313f185d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\wsq">
+      <UniqueIdentifier>{a3aaee2a-79b7-45f2-a298-00d2c6df1699}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\prediction">
+      <UniqueIdentifier>{d1667bf2-0bdf-4d49-b977-2af84b809bc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\features">
+      <UniqueIdentifier>{955f4359-c4e2-4ce3-ac06-beb997d1f518}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NFIQ2Algorithm\src\Data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\FingerprintImageData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\NFIQ2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\NFIQ2Algorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\NFIQException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\features\FeatureFunctions.cpp">
+      <Filter>Source Files\features</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\features\FingerJetFXFeature.cpp">
+      <Filter>Source Files\features</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\features\FJFXMinutiaeQualityFeatures.cpp">
+      <Filter>Source Files\features</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\features\ImgProcROIFeature.cpp">
+      <Filter>Source Files\features</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\features\MuFeature.cpp">
+      <Filter>Source Files\features</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\features\OFFeature.cpp">
+      <Filter>Source Files\features</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\features\QualityMapFeatures.cpp">
+      <Filter>Source Files\features</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\allocfet.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\computil.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\cropcoeff.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\dataio.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\decoder.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\delfet.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\encoder.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\extrfet.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\fatalerr.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\filesize.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\freefet.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\globals.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\huff_jpegl.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\huff_wsq.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\huftable.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\lkupfet.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\nistcom.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\ppi.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\printfet.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\readfet.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\sd14util.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\strfet.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\syserr.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\tableio_jpegl.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\tableio_wsq.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\tree.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\updatfet.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\util.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\wsq\writefet.cpp">
+      <Filter>Source Files\wsq</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\prediction\RandomForestML.cpp">
+      <Filter>Source Files\prediction</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\features\FDAFeature.cpp">
+      <Filter>Source Files\features</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\features\LCSFeature.cpp">
+      <Filter>Source Files\features</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\features\OCLHistogramFeature.cpp">
+      <Filter>Source Files\features</Filter>
+    </ClCompile>
+    <ClCompile Include="NFIQ2Algorithm\src\features\RVUPHistogramFeature.cpp">
+      <Filter>Source Files\features</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NFIQ2Algorithm\include\Data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\FingerprintImageData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\InterfaceDefinitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\NFIQ2Algorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\NFIQException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\OS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\stdint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\Timer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\binops.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\bitmasks.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\bits.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\computil.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\dataio.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\defs.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\dilate.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\display.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\dpy.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\dpydepth.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\event.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\fet.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\findblob.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\grp4comp.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\grp4deco.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\ihead.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\img_io.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\imgboost.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\imgdecod.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\imgtype.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\imgutil.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\intrlv.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\ioutil.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\jpegb.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\jpegl.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\jpeglsd4.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\masks.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\nistcom.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\parsargs.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\rgb_ycc.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\sunrast.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\swap.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\usebsd.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\util.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\wsq\wsq.h">
+      <Filter>Header Files\wsq</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\prediction\RandomForestML.h">
+      <Filter>Header Files\prediction</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\features\FeatureFunctions.h">
+      <Filter>Header Files\features</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\features\FingerJetFXFeature.h">
+      <Filter>Header Files\features</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\features\FJFXMinutiaeQualityFeatures.h">
+      <Filter>Header Files\features</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\features\ImgProcROIFeature.h">
+      <Filter>Header Files\features</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\features\MuFeature.h">
+      <Filter>Header Files\features</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\features\OFFeature.h">
+      <Filter>Header Files\features</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\features\QualityMapFeatures.h">
+      <Filter>Header Files\features</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\prediction\RandomForestTrainedParams.h">
+      <Filter>Header Files\prediction</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\features\FDAFeature.h">
+      <Filter>Header Files\features</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\features\LCSFeature.h">
+      <Filter>Header Files\features</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\features\OCLHistogramFeature.h">
+      <Filter>Header Files\features</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\features\RVUPHistogramFeature.h">
+      <Filter>Header Files\features</Filter>
+    </ClInclude>
+    <ClInclude Include="NFIQ2Algorithm\include\features\BaseFeature.h">
+      <Filter>Header Files\features</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

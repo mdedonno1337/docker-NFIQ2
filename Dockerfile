@@ -7,12 +7,12 @@
 FROM centos as builder
 LABEL maintainer "Marco.DeDonno@unil.ch"
 
-ADD NFIQ2.tgz /
-
 RUN yum update -y
  
 RUN yum group install -y "Development Tools" && \
     yum install -y cmake
+
+ADD NFIQ2 /NFIQ2
 
 RUN cd /NFIQ2/libOpenCV && \
     cmake -D CMAKE_MAKE_PROGRAM=make /NFIQ2/OpenCV/

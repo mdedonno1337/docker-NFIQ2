@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{C02BC8A1-4759-4519-A986-24DB7F399F36}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>opencv_imgproc</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bin\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opencv_imgproc.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opencv_imgproc242d</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bin\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">opencv_imgproc.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">opencv_imgproc242</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\modules\imgproc\perf;..\..\modules\highgui\include;..\..\modules\ts\include;..\..\modules\imgproc\include;..\..\modules\core\include;..\..\modules\imgproc\src;..\..\modules\imgproc\test;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ForcedIncludeFiles>../../modules/imgproc/src/precomp.hpp</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>../../modules/imgproc/src/precomp.hpp</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;HAVE_CVCONFIG_H;CMAKE_INTDIR="Debug";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;HAVE_CVCONFIG_H;CMAKE_INTDIR=\"Debug\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\modules\imgproc\perf;..\..\modules\highgui\include;..\..\modules\ts\include;..\..\modules\imgproc\include;..\..\modules\core\include;..\..\modules\imgproc\src;..\..\modules\imgproc\test;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\modules\imgproc\perf;..\..\modules\highgui\include;..\..\modules\ts\include;..\..\modules\imgproc\include;..\..\modules\core\include;..\..\modules\imgproc\src;..\..\modules\imgproc\test;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;opencv_core242d.lib;zlibd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)/opencv_imgproc242d.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)/opencv_imgproc242d.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\modules\imgproc\perf;..\..\modules\highgui\include;..\..\modules\ts\include;..\..\modules\imgproc\include;..\..\modules\core\include;..\..\modules\imgproc\src;..\..\modules\imgproc\test;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ForcedIncludeFiles>../../modules/imgproc/src/precomp.hpp</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>../../modules/imgproc/src/precomp.hpp</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;HAVE_CVCONFIG_H;CMAKE_INTDIR="Release";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;HAVE_CVCONFIG_H;CMAKE_INTDIR=\"Release\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\modules\imgproc\perf;..\..\modules\highgui\include;..\..\modules\ts\include;..\..\modules\imgproc\include;..\..\modules\core\include;..\..\modules\imgproc\src;..\..\modules\imgproc\test;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\modules\imgproc\perf;..\..\modules\highgui\include;..\..\modules\ts\include;..\..\modules\imgproc\include;..\..\modules\core\include;..\..\modules\imgproc\src;..\..\modules\imgproc\test;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;opencv_core242.lib;zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)/opencv_imgproc242.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)/opencv_imgproc242.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\modules\imgproc\include\opencv2\imgproc\imgproc.hpp" />
+    <ClInclude Include="..\..\modules\imgproc\include\opencv2\imgproc\imgproc_c.h" />
+    <ClInclude Include="..\..\modules\imgproc\include\opencv2\imgproc\types_c.h" />
+    <ClInclude Include="..\..\modules\imgproc\src\gcgraph.hpp" />
+    <ClInclude Include="..\..\modules\imgproc\src\precomp.hpp" />
+    <ClInclude Include="..\..\modules\imgproc\src\_geom.h" />
+    <ClInclude Include="..\..\modules\imgproc\src\_list.h" />
+    <ClCompile Include="..\..\modules\imgproc\src\accum.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\approx.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\canny.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\color.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\contours.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\convhull.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\corner.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\cornersubpix.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\deriv.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\distransform.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\emd.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\featureselect.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\filter.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\floodfill.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\gabor.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\geometry.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\grabcut.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\histogram.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\hough.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\imgwarp.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\linefit.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\matchcontours.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\moments.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\morph.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\phasecorr.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\precomp.cpp" >
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../modules/imgproc/src/precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../modules/imgproc/src/precomp.hpp</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\imgproc\src\pyramids.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\rotcalipers.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\samplers.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\segmentation.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\shapedescr.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\smooth.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\subdivision2d.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\sumpixels.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\tables.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\templmatch.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\thresh.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\undistort.cpp"  />
+    <ClCompile Include="..\..\modules\imgproc\src\utils.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="opencv_core.vcxproj">
+      <Project>92329F89-549F-4D7E-8CA0-B79EA78EE161</Project>
+    </ProjectReference>
+    <ProjectReference Include="zlib.vcxproj">
+      <Project>45EBDF4D-3ECE-4A13-8ED4-9970986917D6</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
