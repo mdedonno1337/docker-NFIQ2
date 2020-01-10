@@ -15,7 +15,7 @@ This command will produce a docker image with the compiled binaris in the `/NFIQ
 
 Since the docker image is separate of the host system, to run the NFIQ2 script on data present on the host, we have to share a volume while starting the docker image:
 
-    docker run -it -v <host folder>:/data nfiq bash
+    docker run -it -v <host folder>:/data nfiq2 bash
 
 It also possible to run directly the `NFIQ2` script from the host without having to type the commands in the docker-image bash:
     
