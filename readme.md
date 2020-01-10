@@ -63,38 +63,3 @@ The tar file can the be used with the following `Dockerfile` image:
     ADD NFIQ2-linux-x84_64.tgz /
     ENV LD_LIBRARY_PATH=/NFIQ2/libOpenCV/lib:/NFIQ2/biomdi/common/lib:/NFIQ2/biomdi/fingerminutia/lib
 
-## How to test
-
-To run the complianceTestSet, get a shell inside the docker image:
-
-    docker run -it nfiq2 bash
-
-go to the complianceTestSet folder:
-    
-    cd NFIQ2/complianceTestSet/
-
-and run the test as usual:
-
-    ./run_nfiq2_complianceTest.csh
-
-Note that the `run_nfiq2_complianceTest.csh` outputs an error even if the test is OK:
-
-    mdedonno@dockerdev:/mnt/hgfs/D/Library/docker-NFIQ2/src$ docker run -it nfiq2 bash
-    [root@3f21e99ced3d /]# cd NFIQ2/complianceTestSet/
-    [root@3f21e99ced3d complianceTestSet]# ./run_nfiq2_complianceTest.csh
-    Running compliance test for ../NFIQ2/bin/NFIQ2 ...
-    NFIQ 2.0 COMPLIANCE TEST STARTS NOW
-    NFIQ2: Compute quality score for fingerprint images in list fpImageList.txt
-           Time needed for initialization of module: 1135.600 ms
-           Running batch computation ...
-           FVC2000_Db1_10_8.bmp: NFIQ2 score = 56
-           FVC2000_Db1_100_1.bmp: NFIQ2 score = 3
-           FVC2000_Db1_100_2.bmp: NFIQ2 score = 4
-           ...
-           FVC2002_Db1_89_1.bmp: NFIQ2 score = 88
-           Batch computation done
-    Files my_nfiq_numbers.txt and complianceTest_NFIQ2_scores.csv differ
-    
-    NFIQ COMPLIANCE TEST OF (../NFIQ2/bin/NFIQ2) COMPLETED
-
-If the NFIQ2 scores are produced, the compilation is OK. The file produced here deffers of the test file because of the presence of multiples columns in the output file that are not present in the test file. 
