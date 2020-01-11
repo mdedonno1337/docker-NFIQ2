@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-FROM centos as builder
+FROM centos:7 as builder
 LABEL maintainer "Marco.DeDonno@unil.ch"
 
 RUN yum update -y
@@ -32,7 +32,7 @@ ENV LD_LIBRARY_PATH=/NFIQ2/biomdi/common/lib:/NFIQ2/biomdi/fingerminutia/lib:/NF
 #
 ################################################################################
 
-FROM centos
+FROM centos:7
 
 COPY --from=builder /NFIQ2/NFIQ2/bin/ /NFIQ2/NFIQ2/bin/
 COPY --from=builder /NFIQ2/biomdi/common/lib/ /NFIQ2/biomdi/common/lib/
