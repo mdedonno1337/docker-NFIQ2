@@ -1,0 +1,31 @@
+stages:
+    - build
+    - push
+    - clean
+
+build:
+    stage: build
+    script:
+        - docker build -t nfiq:$CI_PIPELINE_ID .
+
+push:
+    stage: push
+    only:
+        - master
+    script:
+        - docker tag nfiq:$CI_PIPELINE_ID ${REGISTRY}/nfiq 
+        - docker push ${REGISTRY}/nfiq
+
+temporary:
+    stage: clean
+    
+    script:
+        - docker rmi -f nfiq:$CI_PIPELINE_ID
+
+registry:
+    stage: clean
+    only:
+        - master
+    
+    script:
+        - docker rmi -f ${REGISTRY}/nfiq
